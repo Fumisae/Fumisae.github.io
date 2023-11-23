@@ -1,32 +1,22 @@
 <html>
   <head>
-    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <title>Textures - A-Frame School</title>
+    <meta name="description" content="Textures - A-Frame School">
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
   </head>
   <body>
     <a-scene>
+      <a-sky src="Assets/DSC02547.JPG"></a-sky>
+
+      <a-box src="Assets/excavated_soil_wall_disp_4k.png" position="-2 0.5 -4"></a-box>
+      <a-sphere src="Assets/excavated_soil_wall_diff_4k.jpg" radius="0.5" position="0 0.5 -3"></a-sphere>
+      <a-cone src="Assets/brown_mud_03_diff_4k.jpg" height="2" radius-top="0.1" position="0 1 -6"></a-cone>
+      <a-box src="Assets/aerial_rocks_02_diff_4k.jpg" position="2 0.5 -4"></a-box>
+
+      <a-plane src="Assets/coast_sand_rocks_02_diff_8k.jpg" rotation="-90 0 0" height="100" width="100"></a-plane>
+
+      <a-light type="ambient" color="#445451"></a-light>
+      <a-light type="point" intensity="2" position="2 4 4"></a-light>
     </a-scene>
   </body>
 </html>
-
-<a-scene>
-  <a-box color="red"></a-box>
-</a-scene>
-
-<a-entity id="box" geometry="primitive: box" material="color: red"></a-entity>
-<a-scene>
-  <a-box color="red" rotation="0 45 45" scale="2 2 2"></a-box>
-</a-scene>
-<a-scene>
-  <a-box position="0 2 0" rotation="0 45 45" scale="2 4 2">
-    <a-sphere position="1 0 3"></a-sphere>
-  </a-box>
-</a-scene>
-<a-scene>
-  <a-box color="red" position="0 2 -5" rotation="0 45 45" scale="2 2 2"></a-box>
-</a-scene>
-<a-scene>
-  <a-box src="https://i.imgur.com/mYmmbrp.jpg" position="0 2 -5" rotation="0 45 45"
-    scale="2 2 2"></a-box>
-
-  <a-sky color="#222"></a-sky>
-</a-scene>
