@@ -3,22 +3,70 @@
     <title>Textures - A-Frame School</title>
     <meta name="description" content="Textures - A-Frame School">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-outline@%5E1.1.0/build/aframe-outline.min.js"></script>
+    <script src="anime.min.js"></script>
+    <script>
+      AFRAME.registerComponent('school-playground', {
+        init: function () {
+          var sceneEl = document.querySelector('a-scene'); 
+          
+          for (var i = 0; i < 50; i++) {
+            var boxEl = document.createElement('a-box');
+            boxEl.setAttribute('material', {color: '#EF2D5E'});
+            boxEl.setAttribute('material', {src: 'Assets/51225072133_8b6061bf0a_o.png'});
+            boxEl.setAttribute('position', {x: Math.random() * 20 - 10, y: Math.random() * 20 - 10, z: Math.random() * 20 - 10});
+            boxEl.setAttribute('scale', {x: Math.random() / 2, y: Math.random() / 2, z: Math.random() / 2});
+            sceneEl.appendChild(boxEl);
+          }
+        }
+});
+    </script>
   </head>
   <body>
-    <a-scene>
-      <a-sky src="Assets/51225072133_8b6061bf0a_o.png"></a-sky>
+    <a-scene animation-timeline__1="timeline: #myTimeline">
 
-      <a-box src="Assets/excavated_soil_wall_disp_4k.png" position="-2 0.5 -4"></a-box>
-      <a-sphere src="Assets/excavated_soil_wall_diff_4k.jpg" radius="0.5" position="0 0.5 -3"></a-sphere>
-      <a-cone src="Assets/brown_mud_03_diff_4k.jpg" height="2" radius-top="0.1" position="0 1 -6" material="color:#f20aff"></a-cone>
-      <a-box src="Assets/aerial_rocks_02_diff_4k.jpg" position="2 0.5 -4"></a-box>
+      <a-assets timeout="10000">
+        <a-asset-item src="https://cdn.aframe.io/fonts/Roboto-msdf.json"></a-asset-item>
+        <img id="sky-purple" src="Assets/51225072133_8b6061bf0a_o.png">
+        <img id="soil-wall" src="Assets/excavated_soil_wall_diff_4k.jpg">
+        <img id="brown-mud" src="Assets/brown_mud_03_diff_4k.jpg">
+        <img id="aerial-rocks" src="Assets/aerial_rocks_02_diff_4k.jpg">
+        <img id="sakura" src="Assets/DSC02547.JPG">
+      </a-assets>
 
-      <a-entity position="" id="Light" light="color:#ff2953;decay:3.44;distance:2.05;intensity:4.220000000000001"></a-entity>
+      <a-sky src="#sky-purple"></a-sky>
+
+      <a-box id=A src="#soil-wall" position="-2 0.5 -4"></a-box>
+
+      <a-sphere src="#soil-wall" radius="0.5" position="0 0.5 -3" side="back"
+                animation="property: scale; dir: alternate; dur: 200; to: 1.3 1.3 1.3; loop: true"></a-sphere>
+      <a-cone src="#brown-mud" height="2" radius-top="0.1" position="0 1 -6" material="color:#f20aff"
+              animation="property: material.color; dir: alternate; dur: 100; to: 1.1 1.1 1.1; loop: true"></a-cone>
+      <a-box src="#aerial-rocks" position="2 0.5 -4"></a-box>
+      <a-dodecahedron src="#sakura" color="#B96FD3" position="4 1 -4"></a-dodecahedron>
+      <a-torus-knot src="#soil-wall" position="-4 1 -4" radius-tubular="0.05" p="7"></a-torus-knot>
+
+      <a-box position="-1 1.6 -5"
+      animation="property: position; to: 1 8 -10; dur: 2000; easing: easeInOutElastic; loop: true; dir: alternate" color="tomato"></a-box>
+
+      <a-entity rotation="0 0 0" 
+                animation="property: rotation; to: 50 36 20; loop: true; dur: 1000; dir: alternate">
+        <a-sphere position="5 5 -10" color="mediumseagreen"></a-sphere></a-entity>
 
       <a-light type="ambient" color="#445451"></a-light>
       <a-light type="point" intensity="2" position="2 4 4"></a-light>
 
-      
+      <a-entity scale="2 2 2" geometry="primitive:torusKnot" position="0 6 -10" material="src:#sakura">
+        <a-animation easing="linear" attribute="rotation" dur="10000" to="0 0 360" repeat="indefinite"></a-animation>
+       
+      <a-entity id="lightSphere" geometry="primitive: sphere; radius: 0.2" material="shader: flat" light="type: point; color: #FFF" position="-4 3 0"
+                animation="property: position; to: 4 2.8 -4; dir: alternate; loop: true"></a-entity>
+
+     <a-entity particle-system="preset: snow; particleCount: 10000"></a-entity>
+     <a-entity particle-system="preset: rain; color: #ff9300; particleCount: 10000" position="0 0 -5"></a-entity>
+  
     </a-scene>
   </body>
 </html>
