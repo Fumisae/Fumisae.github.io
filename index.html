@@ -1,8 +1,8 @@
 <html>
   <head>
-    <title>Textures - A-Frame School</title>
-    <meta name="description" content="Textures - A-Frame School">
-    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <title>Polaris</title>
+    <meta name="Polaris" content="Music Video">
+      <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
     <script src="https://unpkg.com/aframe-outline@%5E1.1.0/build/aframe-outline.min.js"></script>
@@ -21,7 +21,7 @@
             sceneEl.appendChild(boxEl);
           }
         }
-});
+      });
     </script>
   </head>
   <body>
@@ -66,7 +66,9 @@
 
      <a-entity particle-system="preset: snow; particleCount: 10000"></a-entity>
      <a-entity particle-system="preset: rain; color: #ff9300; particleCount: 10000" position="0 0 -5"></a-entity>
-  
+
+     <a-sound src="Assets/EP-223-004_AmplitudeModulationEtude_FumiyaKawase.wav" autoplay="true" position="0 2 -5"></a-sound>
+
     </a-scene>
   </body>
 </html>
