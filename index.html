@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cursor Handler - A-Frame School</title>
+    <meta name="description" content="Cursor Handler - A-Frame School">
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-raytrace-component/dist/aframe-raytrace-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+
+    <script>
+      AFRAME.registerComponent('handle-events', {
+        init: function () {
+          var el = this.el;
+          el.addEventListener('click', function () {
+            el.setAttribute('color', '#6cff00'); 
+          });
+        } 
+      });
+    </script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assests><img id="block" src="Assets/MOSHED-2023-12-10-19-38-53.jpg">
+      </a-assests>
+      <a-entity animation="property: scale; dir: alternate; dur: 5000; to: 2 2 2; loop: true">
+        <a-torus-knot src="Assets/MOSHED-2023-12-10-18-13-55.jpg" color="#ff8f00" radius="0.8" radius-tubular="0.145" p="2" q="3" position="0 1 -7" handle-events="" material="" geometry=""
+                      animation="easing: linear; property: rotation; dur: 30000; to: 0 360 1080; repeat: indefinite; loop: true">
+          <a-link href="http://127.0.0.1:5500/fumisae1/index.html" geometry="primitive: circle; skipCache: true; segments: 64" material="shader: portal; side: double; visible: false" link="" visible="false"><a-entity text="color: white; align: center; font: kelsonsans; value: http://127.0.0.1:5500/fumisae1/index.html; width: 5" position="0 1.5 0" rotation=""></a-entity><a-entity geometry="primitive: sphere; segmentsWidth: 64; segmentsHeight: 64; phiLength: 180; thetaLength: 360" material="shader: portal; borderEnabled: 0; side: back" rotation="0 180 0" position="" visible="false"></a-entity><a-entity geometry="primitive: sphere; radius: 10; segmentsWidth: 64; segmentsHeight: 64" material="shader: portal; borderEnabled: 0; side: back" visible="false"></a-entity></a-link>
+        </a-torus-knot>
+
+        <a-torus-knot src="Assets/MOSHED-2023-12-10-18-13-55.jpg" color="#8bff00" radius="0.8" radius-tubular="0.145" p="2" q="3" position="4 1 -7" handle-events="" material="" geometry=""
+        animation="easing: linear; property: rotation; dur: 30000; to: -1080 0 360; repeat: indefinite; loop: true">
+          <a-link href="http://127.0.0.1:5500/fumisae1/index.html" geometry="primitive: circle; skipCache: true; segments: 64" material="shader: portal; side: double; visible: false" link="" visible="false"><a-entity text="color: white; align: center; font: kelsonsans; value: http://127.0.0.1:5500/fumisae1/index.html; width: 5" position="0 1.5 0" rotation=""></a-entity><a-entity geometry="primitive: sphere; segmentsWidth: 64; segmentsHeight: 64; phiLength: 180; thetaLength: 360" material="shader: portal; borderEnabled: 0; side: back" rotation="0 180 0" position="" visible="false"></a-entity><a-entity geometry="primitive: sphere; radius: 10; segmentsWidth: 64; segmentsHeight: 64" material="shader: portal; borderEnabled: 0; side: back" visible="false"></a-entity></a-link>
+        </a-torus-knot>
+
+        <a-torus-knot src="Assets/MOSHED-2023-12-10-18-13-55.jpg" color="#00ffd8" radius="0.8" radius-tubular="0.145" p="2" q="3" position="-4 1 -7" handle-events="" material="" geometry=""
+        animation="easing: linear; property: rotation; dur: 30000; to: 360 -1080 0; repeat: indefinite; loop: true">
+          <a-link href="http://127.0.0.1:5500/fumisae1/index.html" geometry="primitive: circle; skipCache: true; segments: 64" material="shader: portal; side: double; visible: false" link="" visible="false"><a-entity text="color: white; align: center; font: kelsonsans; value: http://127.0.0.1:5500/fumisae1/index.html; width: 5" position="0 1.5 0" rotation=""></a-entity><a-entity geometry="primitive: sphere; segmentsWidth: 64; segmentsHeight: 64; phiLength: 180; thetaLength: 360" material="shader: portal; borderEnabled: 0; side: back" rotation="0 180 0" position="" visible="false"></a-entity><a-entity geometry="primitive: sphere; radius: 10; segmentsWidth: 64; segmentsHeight: 64" material="shader: portal; borderEnabled: 0; side: back" visible="false"></a-entity></a-link>
+        </a-torus-knot>
+
+        <a-torus-knot src="Assets/MOSHED-2023-12-10-18-13-55.jpg" color="#ff00d8" radius="0.8" radius-tubular="0.145" p="2" q="3" position="-8 1 -7" handle-events="" material="" geometry=""
+        animation="easing: linear; property: rotation; dur: 30000; to: 360 0 -1080; repeat: indefinite; loop: true">
+          <a-link href="http://127.0.0.1:5500/fumisae1/index.html" geometry="primitive: circle; skipCache: true; segments: 64" material="shader: portal; side: double; visible: false" link="" visible="false"><a-entity text="color: white; align: center; font: kelsonsans; value: http://127.0.0.1:5500/fumisae1/index.html; width: 5" position="0 1.5 0" rotation=""></a-entity><a-entity geometry="primitive: sphere; segmentsWidth: 64; segmentsHeight: 64; phiLength: 180; thetaLength: 360" material="shader: portal; borderEnabled: 0; side: back" rotation="0 180 0" position="" visible="false"></a-entity><a-entity geometry="primitive: sphere; radius: 10; segmentsWidth: 64; segmentsHeight: 64" material="shader: portal; borderEnabled: 0; side: back" visible="false"></a-entity></a-link>
+        </a-torus-knot>
+
+        <a-torus-knot src="Assets/MOSHED-2023-12-10-18-13-55.jpg" color="#f7ff00" radius="0.8" radius-tubular="0.145" p="2" q="3" position="8 1 -7" handle-events="" material="" geometry=""
+        animation="easing: linear; property: rotation; dur: 30000; to: 360 0 1080; repeat: indefinite; loop: true">
+        <a-link href="http://127.0.0.1:5500/fumisae1/index.html" geometry="primitive: circle; skipCache: true; segments: 64" material="shader: portal; side: double; visible: false" link="" visible="false"><a-entity text="color: white; align: center; font: kelsonsans; value: http://127.0.0.1:5500/fumisae1/index.html; width: 5" position="0 1.5 0" rotation=""></a-entity><a-entity geometry="primitive: sphere; segmentsWidth: 64; segmentsHeight: 64; phiLength: 180; thetaLength: 360" material="shader: portal; borderEnabled: 0; side: back" rotation="0 180 0" position="" visible="false"></a-entity><a-entity geometry="primitive: sphere; radius: 10; segmentsWidth: 64; segmentsHeight: 64" material="shader: portal; borderEnabled: 0; side: back" visible="false"></a-entity></a-link>
+        </a-torus-knot>
+      </a-entity>
+
+      //a-entity id="lightSphere" geometry="primitive: sphere; radius: 0.2" material="shader: flat" light="type: point; color: #FFF" position="-4 3 0"
+                animation="property: position; to: 4 2.8 -4; dir: alternate; loop: true"></a-entity>
+
+      <a-box src="#block" position="0  4 -7" side="double"
+             animation="easing: linear; property: rotation; dur: 10000; to :0 0 360: repeat: indefinite; loop: true">
+      </a-box>
+      <a-box src="#block" position="0  4 -7" side="double"
+             animation="easing: linear; property: rotation; dur: 10000; to :360 0 0: repeat: indefinite; loop: true">
+      </a-box>
+      <a-box src="#block" position="0  4 -7" side="double"
+             animation="easing: linear; property: rotation; dur: 10000; to :0 360 0: repeat: indefinite; loop: true">
+      </a-box>
+      <a-entity position="0 4 -7" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur: 5000; easing: linear; loop: true">
+          <a-box src="#block" position="3 0 0" animation="property: rotation; to: 360 360 360; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          </a-box>
+      </a-entity>
+
+      <a-entity position="0 4 -5" animation="property: rotation; to: 360 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#f0ff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#ff6800" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#00f3ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="2 4 -5" animation="property: rotation; to: 360 360 720;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff00c5" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#c900ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#0080ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="-2 4 -5" animation="property: rotation; to: 720 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff0000" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#2aff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#ff0083" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      
+      <a-entity position="3 -2 -5" animation="property: rotation; to: 360 720 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#f0ff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#ff6800" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#00f3ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="1 -2 -5" animation="property: rotation; to: 3 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff00c5" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#c900ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#0080ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="-3 -1 -5" animation="property: rotation; to: 3 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff0000" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#2aff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#ff0083" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+
+      <a-entity position="8 -2 0" animation="property: rotation; to: 360 720 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#f0ff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#ff6800" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#00f3ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="8 -2 3" animation="property: rotation; to: 3 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff00c5" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#c900ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#0080ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="8 -1 -3" animation="property: rotation; to: 3 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff0000" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#2aff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#ff0083" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+
+      <a-entity position="8 2 0" animation="property: rotation; to: 360 720 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#f0ff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#ff6800" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#00f3ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="8 2 3" animation="property: rotation; to: 3 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff00c5" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#c900ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#0080ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="8 2 -3" animation="property: rotation; to: 3 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff0000" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#2aff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#ff0083" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+
+      <a-entity position="-8 -2 0" animation="property: rotation; to: 360 720 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#f0ff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#ff6800" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#00f3ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="-8 -2 3" animation="property: rotation; to: 3 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff00c5" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#c900ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#0080ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="-8 -1 -3" animation="property: rotation; to: 3 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff0000" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#2aff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#ff0083" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+
+      <a-entity position="-8 2 0" animation="property: rotation; to: 360 720 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#f0ff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#ff6800" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#00f3ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="-8 2 3" animation="property: rotation; to: 3 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff00c5" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#c900ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#0080ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="-8 2 -3" animation="property: rotation; to: 3 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff0000" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#2aff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#ff0083" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+
+      <a-entity position="0 4 5" animation="property: rotation; to: 360 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#f0ff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#ff6800" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#00f3ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="2 4 5" animation="property: rotation; to: 360 360 720;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff00c5" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#c900ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#0080ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="-2 4 5" animation="property: rotation; to: 720 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff0000" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#2aff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#ff0083" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      
+      <a-entity position="3 -2 5" animation="property: rotation; to: 360 720 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#f0ff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#ff6800" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#00f3ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="1 -2 5" animation="property: rotation; to: 3 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff00c5" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#c900ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#0080ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="-3 -1 5" animation="property: rotation; to: 3 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff0000" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#2aff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#ff0083" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+
+      <a-entity position="0 4 0" animation="property: rotation; to: 360 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#f0ff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#ff6800" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#00f3ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="2 4 0" animation="property: rotation; to: 360 360 720;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff00c5" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#c900ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#0080ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="-2 4 0" animation="property: rotation; to: 720 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff0000" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#2aff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#ff0083" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      
+      <a-entity position="3 -2 0" animation="property: rotation; to: 360 720 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#f0ff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#ff6800" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#00f3ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="1 -2 0" animation="property: rotation; to: 3 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff00c5" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#c900ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#0080ff" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+      <a-entity position="-3 -1 " animation="property: rotation; to: 3 360 360;repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-sphere position="2 0 0" radius="0.105" color="#ff0000" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+          <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+          </a-sphere> 
+          <a-sphere position="2 -2 0" radius="0.105" color="#2aff00" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+          <a-sphere position="2 0 -2" radius="0.105" color="#ff0083" side="double" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true">
+            <a-sphere position="0 0 0.038" radius="0.075" color="#000000" side="double">
+            </a-sphere> 
+          </a-sphere>
+        </a-sphere>
+      </a-entity>
+
+      <a-entity position="0 15 -30" animation="property: rotation; to: 0 360 0;repeat: indefinite; dur: 50000; easing: linear; loop: true">
+        <a-torus position="150 0 0"  color="#f0ff00"
+        animation="property: rotation; to: 720 360 0; repeat: indefinite; dur:3500; easing: linear; loop: true">
+        </a-torus> 
+        <a-torus position="200 0 -10"  color="#f0ff00"  
+        animation="property: rotation; to: -720 360 0; repeat: indefinite; dur:3000; easing: linear; loop: true">
+        </a-torus> 
+        <a-torus position="130 0 -5"  color="#f0ff00"  
+        animation="property: rotation; to: -720 360 360; repeat: indefinite; dur:2000; easing: linear; loop: true">
+        </a-torus> 
+      </a-entity>
+
+      <a-entity position="0 30 -10" animation="property: rotation; to: 0 360 0;repeat: indefinite; dur: 50000; easing: linear; loop: true">
+        <a-cylinder position ="5 0 0" color="yellow" theta-start="70" theta-length="300" side="double"></a-cylinder>
+      </a-entity>
+      <a-entity position="0 25 0" animation="property: rotation; to: 0 -360 0;repeat: indefinite; dur: 50000; easing: linear; loop: true">
+        <a-cylinder position ="5 0 0" color="yellow" theta-start="70" theta-length="300" side="double"></a-cylinder>
+      </a-entity>
+
+      <a-entity position="6 10 -10" animation="property: rotation; to: 0 360 0;repeat: indefinite; dur: 50000; easing: linear; loop: true">
+        <a-cylinder position ="5 0 0" color="yellow" theta-start="70" theta-length="300" side="double"></a-cylinder>
+      </a-entity>
+      <a-entity position="0 8 0" animation="property: rotation; to: 0 -360 0;repeat: indefinite; dur: 50000; easing: linear; loop: true">
+        <a-cylinder position ="5 0 0" color="yellow" theta-start="70" theta-length="300" side="double"></a-cylinder>
+      </a-entity>
+
+      <a-entity position="0 15 -10" animation="property: rotation; to: 0 0 3600;repeat: indefinite; dur: 50000; easing: linear; loop: true">
+        <a-cylinder position ="5 0 0" color="yellow" theta-start="70" theta-length="300" side="double"></a-cylinder>
+      </a-entity>
+
+      <a-entity position="0 15 -10" animation="property: scale; to: 10 10 15;repeat: indefinite; dur: 40000; easing: linear; loop: true">
+        <a-box position ="5 0 0" scale="1 1 1" color="#00ff1b" side="double"
+               animation="property: rotation; to: 0 0 3600;repeat: indefinite; dur: 50000; easing: linear; loop: true"></a-box>
+      </a-entity>
+
+      <a-entity position="0 15 -10" animation="property: scale; to: 2 2 2;repeat: indefinite; dur: 40000; easing: linear; loop: true">
+        <a-box position ="5 10 -10" scale="1 1 1" color="ff0083" side="double"
+               animation="property: rotation; to: 0 0 3600;repeat: indefinite; dur: 50000; easing: linear; loop: true"></a-box>
+      </a-entity>
+      
+
+    
+      
+      <a-camera><a-cursor></a-cursor></a-camera>
+      <a-sky src="Assets/MOSHED-2023-12-10-18-26-3.jpg" material=""></a-sky>
+
+    </a-scene>
+  </body>
+</html>
