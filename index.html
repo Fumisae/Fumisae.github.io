@@ -2,22 +2,30 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Cursor Handler - A-Frame School</title>
-    <meta name="description" content="Cursor Handler - A-Frame School">
+    <title>FUMIYA KAWASE</title>
+    <meta name="FumiyaKawase" content="Website">
+
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-raytrace-component/dist/aframe-raytrace-component.min.js"></script>
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
 
     <script>
-      AFRAME.registerComponent('handle-events', {
+      AFRAME.registerComponent('navigate-on-click', {
+        schema: {
+          url: {default: ''}
+        },
+    
         init: function () {
+          var data = this.data;
           var el = this.el;
+    
           el.addEventListener('click', function () {
-            el.setAttribute('color', '#6cff00'); 
+            window.location.href = data.url;
           });
-        } 
-      });
+        }
+      });        
     </script>
+
   </head>
   <body>
     <a-scene>
@@ -25,29 +33,22 @@
       </a-assests>
       <a-entity animation="property: scale; dir: alternate; dur: 5000; to: 2 2 2; loop: true">
         <a-torus-knot src="Assets/MOSHED-2023-12-10-18-13-55.jpg" color="#ff8f00" radius="0.8" radius-tubular="0.145" p="2" q="3" position="0 1 -7" handle-events="" material="" geometry=""
-                      animation="easing: linear; property: rotation; dur: 30000; to: 0 360 1080; repeat: indefinite; loop: true">
-          <a-link href="http://127.0.0.1:5500/fumisae1/index.html" geometry="primitive: circle; skipCache: true; segments: 64" material="shader: portal; side: double; visible: false" link="" visible="false"><a-entity text="color: white; align: center; font: kelsonsans; value: http://127.0.0.1:5500/fumisae1/index.html; width: 5" position="0 1.5 0" rotation=""></a-entity><a-entity geometry="primitive: sphere; segmentsWidth: 64; segmentsHeight: 64; phiLength: 180; thetaLength: 360" material="shader: portal; borderEnabled: 0; side: back" rotation="0 180 0" position="" visible="false"></a-entity><a-entity geometry="primitive: sphere; radius: 10; segmentsWidth: 64; segmentsHeight: 64" material="shader: portal; borderEnabled: 0; side: back" visible="false"></a-entity></a-link>
+                      animation="easing: linear; property: rotation; dur: 30000; to: 0 360 1080; repeat: indefinite; loop: true"
+                      navigate-on-click="url: https://bandcamp.com/kawase">
         </a-torus-knot>
 
         <a-torus-knot src="Assets/MOSHED-2023-12-10-18-13-55.jpg" color="#8bff00" radius="0.8" radius-tubular="0.145" p="2" q="3" position="4 1 -7" handle-events="" material="" geometry=""
-        animation="easing: linear; property: rotation; dur: 30000; to: -1080 0 360; repeat: indefinite; loop: true">
-          <a-link href="http://127.0.0.1:5500/fumisae1/index.html" geometry="primitive: circle; skipCache: true; segments: 64" material="shader: portal; side: double; visible: false" link="" visible="false"><a-entity text="color: white; align: center; font: kelsonsans; value: http://127.0.0.1:5500/fumisae1/index.html; width: 5" position="0 1.5 0" rotation=""></a-entity><a-entity geometry="primitive: sphere; segmentsWidth: 64; segmentsHeight: 64; phiLength: 180; thetaLength: 360" material="shader: portal; borderEnabled: 0; side: back" rotation="0 180 0" position="" visible="false"></a-entity><a-entity geometry="primitive: sphere; radius: 10; segmentsWidth: 64; segmentsHeight: 64" material="shader: portal; borderEnabled: 0; side: back" visible="false"></a-entity></a-link>
-        </a-torus-knot>
+        animation="easing: linear; property: rotation; dur: 30000; to: -1080 0 360; repeat: indefinite; loop: true" navigate-on-click="url: https://soundcloud.com/fumiyakawase?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"></a-torus-knot>
+        
 
         <a-torus-knot src="Assets/MOSHED-2023-12-10-18-13-55.jpg" color="#00ffd8" radius="0.8" radius-tubular="0.145" p="2" q="3" position="-4 1 -7" handle-events="" material="" geometry=""
-        animation="easing: linear; property: rotation; dur: 30000; to: 360 -1080 0; repeat: indefinite; loop: true">
-          <a-link href="http://127.0.0.1:5500/fumisae1/index.html" geometry="primitive: circle; skipCache: true; segments: 64" material="shader: portal; side: double; visible: false" link="" visible="false"><a-entity text="color: white; align: center; font: kelsonsans; value: http://127.0.0.1:5500/fumisae1/index.html; width: 5" position="0 1.5 0" rotation=""></a-entity><a-entity geometry="primitive: sphere; segmentsWidth: 64; segmentsHeight: 64; phiLength: 180; thetaLength: 360" material="shader: portal; borderEnabled: 0; side: back" rotation="0 180 0" position="" visible="false"></a-entity><a-entity geometry="primitive: sphere; radius: 10; segmentsWidth: 64; segmentsHeight: 64" material="shader: portal; borderEnabled: 0; side: back" visible="false"></a-entity></a-link>
-        </a-torus-knot>
+        animation="easing: linear; property: rotation; dur: 30000; to: 360 -1080 0; repeat: indefinite; loop: true" navigate-on-click="url: https://www.instagram.com/fumiya_kawase/"></a-torus-knot>
 
         <a-torus-knot src="Assets/MOSHED-2023-12-10-18-13-55.jpg" color="#ff00d8" radius="0.8" radius-tubular="0.145" p="2" q="3" position="-8 1 -7" handle-events="" material="" geometry=""
-        animation="easing: linear; property: rotation; dur: 30000; to: 360 0 -1080; repeat: indefinite; loop: true">
-          <a-link href="http://127.0.0.1:5500/fumisae1/index.html" geometry="primitive: circle; skipCache: true; segments: 64" material="shader: portal; side: double; visible: false" link="" visible="false"><a-entity text="color: white; align: center; font: kelsonsans; value: http://127.0.0.1:5500/fumisae1/index.html; width: 5" position="0 1.5 0" rotation=""></a-entity><a-entity geometry="primitive: sphere; segmentsWidth: 64; segmentsHeight: 64; phiLength: 180; thetaLength: 360" material="shader: portal; borderEnabled: 0; side: back" rotation="0 180 0" position="" visible="false"></a-entity><a-entity geometry="primitive: sphere; radius: 10; segmentsWidth: 64; segmentsHeight: 64" material="shader: portal; borderEnabled: 0; side: back" visible="false"></a-entity></a-link>
-        </a-torus-knot>
+        animation="easing: linear; property: rotation; dur: 30000; to: 360 0 -1080; repeat: indefinite; loop: true"navigate-on-click="url: https://www.mixcloud.com/fumiyakawase/"></a-torus-knot>
 
         <a-torus-knot src="Assets/MOSHED-2023-12-10-18-13-55.jpg" color="#f7ff00" radius="0.8" radius-tubular="0.145" p="2" q="3" position="8 1 -7" handle-events="" material="" geometry=""
-        animation="easing: linear; property: rotation; dur: 30000; to: 360 0 1080; repeat: indefinite; loop: true">
-        <a-link href="http://127.0.0.1:5500/fumisae1/index.html" geometry="primitive: circle; skipCache: true; segments: 64" material="shader: portal; side: double; visible: false" link="" visible="false"><a-entity text="color: white; align: center; font: kelsonsans; value: http://127.0.0.1:5500/fumisae1/index.html; width: 5" position="0 1.5 0" rotation=""></a-entity><a-entity geometry="primitive: sphere; segmentsWidth: 64; segmentsHeight: 64; phiLength: 180; thetaLength: 360" material="shader: portal; borderEnabled: 0; side: back" rotation="0 180 0" position="" visible="false"></a-entity><a-entity geometry="primitive: sphere; radius: 10; segmentsWidth: 64; segmentsHeight: 64" material="shader: portal; borderEnabled: 0; side: back" visible="false"></a-entity></a-link>
-        </a-torus-knot>
+        animation="easing: linear; property: rotation; dur: 30000; to: 360 0 1080; repeat: indefinite; loop: true" navigate-on-click="url: https://youtube.com/@alcedo7256?si=kYPFNeiatGECPEKy"></a-torus-knot>
       </a-entity>
 
       //a-entity id="lightSphere" geometry="primitive: sphere; radius: 0.2" material="shader: flat" light="type: point; color: #FFF" position="-4 3 0"
