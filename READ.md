@@ -99,7 +99,7 @@ I made eyeballs by using two sphere primitives like below.
 </a-sphere>
 ```
 I multiplied it and added rotation animation on both individual eyeballs and entity.
-For the boxes around the viewer, I applied three different animations; color, rotation, and scale.
+For the boxes around the viewer, I applied three different animations: color, rotation, and scale.
 ```
 <a-box src="Assets/MOSHED-2023-12-10-18-13-55.jpg" position="0 0 0" color="black" 
                animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true"
