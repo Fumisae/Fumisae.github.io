@@ -6,8 +6,6 @@
     <meta name="FumiyaKawase" content="Website">
 
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-raytrace-component/dist/aframe-raytrace-component.min.js"></script>
-    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
     
     <!-- Click Function -->
     <script>
@@ -694,37 +692,60 @@
         <a-cylinder src="Assets/denmin_fabric_02_diff_8k.jpg" position ="5 0 0" theta-start="70" theta-length="300" side="double"></a-cylinder>
       </a-entity>
       <a-entity position="0 25 0" animation="property: rotation; to: 0 -360 0;repeat: indefinite; dur: 50000; easing: linear; loop: true">
-        <a-cylinder src="Assets/denmin_fabric_02_diff_8k.jpg" position ="5 0 0" theta-start="70" theta-length="300" side="double"></a-cylinder>
+        <a-cylinder src="Assets/MOSHED-2023-12-14-0-38-36.jpg" position ="5 0 0" theta-start="70" theta-length="300" side="double"></a-cylinder>
       </a-entity>
-
       <a-entity position="6 10 -10" animation="property: rotation; to: 0 360 0;repeat: indefinite; dur: 50000; easing: linear; loop: true">
-        <a-cylinder position ="5 0 0" color="yellow" theta-start="70" theta-length="300" side="double"></a-cylinder>
+        <a-cylinder src="Assets/MOSHED-2023-12-13-23-50-14.jpg" position ="5 0 0"  theta-start="70" theta-length="300" side="double"></a-cylinder>
       </a-entity>
       <a-entity position="0 8 0" animation="property: rotation; to: 0 -360 0;repeat: indefinite; dur: 50000; easing: linear; loop: true">
-        <a-cylinder position ="5 0 0" color="yellow" theta-start="70" theta-length="300" side="double"></a-cylinder>
+        <a-cylinder src="Assets/MOSHED-2023-12-13-23-50-14.jpg" position ="5 0 0" theta-start="70" theta-length="300" side="double"></a-cylinder>
       </a-entity>
 
-      <a-entity position="0 15 -10" animation="property: rotation; to: 0 0 3600;repeat: indefinite; dur: 50000; easing: linear; loop: true">
-        <a-cylinder position ="5 0 0" color="yellow" theta-start="70" theta-length="300" side="double"></a-cylinder>
-      </a-entity>
-
+      <!-- Box -->
       <a-entity position="0 15 -10" animation="property: scale; to: 10 10 15;repeat: indefinite; dur: 40000; easing: linear; loop: true">
         <a-box src="Assets/aerial_rocks_02_diff_4k.jpg" position ="5 0 0" scale="1 1 1" side="double"
                animation="property: rotation; to: 0 0 3600;repeat: indefinite; dur: 50000; easing: linear; loop: true"></a-box>
       </a-entity>
-
       <a-entity position="0 15 -10" animation="property: scale; to: 2 2 2;repeat: indefinite; dur: 40000; easing: linear; loop: true">
         <a-box src="Assets/MOSHED-2023-12-14-0-23-42.jpg" position ="5 10 -10" scale="1 1 1" color="ff0083" side="double"
                animation="property: rotation; to: 0 0 3600;repeat: indefinite; dur: 50000; easing: linear; loop: true"></a-box>
       </a-entity>
-      
+
+      <!-- Flush Box -->
+      <a-entity position="0 0 0" animation="property: rotation; to: 360 0 0; repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-box src="Assets/MOSHED-2023-12-10-18-13-55.jpg" position="0 0 0" color="black" 
+               animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true"
+               animation__2="easing: linear; property: scale; dur: 2000; to: 1.1 1.1 1.1; repeat: indefinite; loop: true; dir: alternate; delay: 1000"
+               animation__3="easing: linear; property: color; dur: 20; from: black; to: #ffffff; repeat: indefinite; loop: true; dir: alternate">
+        </a-box>
+      </a-entity>
+      <a-entity position="3 3 0" animation="property: rotation; to: 360 0 0; repeat: indefinite; dur: 5000; easing: linear; loop: true">
+          <a-box src="Assets/MOSHED-2023-12-10-18-13-55.jpg" position="0 0 0" color="black" 
+                 animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true"
+                 animation__2="easing: linear; property: scale; dur: 2000; to: 1.1 1.1 1.1; repeat: indefinite; loop: true; dir: alternate; delay: 1000"
+                 animation__3="easing: linear; property: color; dur: 20; from: black; to: #ffffff; repeat: indefinite; loop: true; dir: alternate">
+          </a-box>
+      </a-entity>
+      <a-entity position="-3 3 0" animation="property: rotation; to: 360 0 0; repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-box src="Assets/MOSHED-2023-12-10-18-13-55.jpg" position="0 0 0" color="black" 
+               animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true"
+               animation__2="easing: linear; property: scale; dur: 2000; to: 1.1 1.1 1.1; repeat: indefinite; loop: true; dir: alternate; delay: 1000"
+               animation__3="easing: linear; property: color; dur: 20; from: black; to: #ffffff; repeat: indefinite; loop: true; dir: alternate">
+        </a-box>
+       </a-entity>
+       <a-entity position="0 5 0" animation="property: rotation; to: 360 0 0; repeat: indefinite; dur: 5000; easing: linear; loop: true">
+        <a-box src="Assets/MOSHED-2023-12-10-18-13-55.jpg" position="0 0 0" color="black" 
+               animation="property: rotation; to: 0 360 0; repeat: indefinite; dur:5000; easing: linear; loop: true"
+               animation__2="easing: linear; property: scale; dur: 2000; to: 1.1 1.1 1.1; repeat: indefinite; loop: true; dir: alternate; delay: 1000"
+               animation__3="easing: linear; property: color; dur: 20; from: black; to: #ffffff; repeat: indefinite; loop: true; dir: alternate">
+        </a-box>
+       </a-entity>
 
     
       
       <a-camera><a-cursor></a-cursor></a-camera>
+      
       <a-sky src="Assets/MOSHED-2023-12-10-18-26-3.jpg" material="" animation="easing: linear; property: rotation; dur: 300000; to: 0 360 0; repeat: indefinite; loop: true"></a-sky>
-      //a-entity id="lightSphere" geometry="primitive: sphere; radius: 0.2" material="shader: flat" light="type: point; color: #FFF" position="-4 3 0"
-                animation="property: position; to: 4 2.8 -4; dir: alternate; loop: true">/a-entity>
 
     </a-scene>
   </body>
