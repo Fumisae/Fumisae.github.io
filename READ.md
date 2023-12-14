@@ -1,0 +1,10 @@
+# Final Project
+## Project Name: 3D Website
+## About My Project
+My original plan was to create a 3-minute music video using A-Frame. However, I changed my mind and decided to develop a website in a virtual reality environment instead. On this website, you can access my five different social media accounts or just explore the virtual environment.
+## Inspirations
+One of the reasons why I changed my plan was that I found it too complex to create an animation timeline in A-frame. I thought it's not the best platform for making a video. A-frame is great for making interactive VR experiences. I found an example work (https://aframe.io/aframe/examples/showcase/link-traversal/) that had three objects linked to other html files. When you click on one, you can access the another VR experiment. I came up that I could use this future to create my website.
+## Week1
+I started from learning about A-frame in A-Frame School (https://aframe.io/aframe-school/#/). A-Frame is based on top of HTML, so I began by learning the basic structure of HTML. After I acquired the skills to create 3D objects, I learned how to add textures to them. You can use any JPG image files as texturs and add them to any objects. A-Frame also has a visual editor called A-Frame Inspector. It is useful because it allows for a more intuitive approach than coding. However, I usually prefer not to use it because when I tried it, I couldn't get the same results after editing the code as I've seen on the inspector for some reasons. I also learned how to add animation to objects. There are more possibilities if you use JavaScript, DOM APIs, and three,js, but I didn't explore them this time because it seemed like too much work for one month.
+## Week2
+I continued explore A-Frame School. A-Frame provides the registry where you can grab cool components that the community has added to A-Frame. 
