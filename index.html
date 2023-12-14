@@ -8,7 +8,8 @@
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
     <script src="https://unpkg.com/aframe-raytrace-component/dist/aframe-raytrace-component.min.js"></script>
     <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
-
+    
+    <!-- Click Function -->
     <script>
       AFRAME.registerComponent('navigate-on-click', {
         schema: {
@@ -29,40 +30,101 @@
   </head>
   <body>
     <a-scene>
-      <a-assests><img id="block" src="Assets/MOSHED-2023-12-10-19-38-53.jpg">
-      </a-assests>
+
+      <!-- Assets -->
+      <a-assests><img id="block" src="Assets/MOSHED-2023-12-10-19-38-53.jpg"></a-assests>
+
+       <!-- Torus-knot Link -->
       <a-entity animation="property: scale; dir: alternate; dur: 5000; to: 2 2 2; loop: true">
+        <!-- Center -->
         <a-torus-knot src="Assets/MOSHED-2023-12-10-18-13-55.jpg" color="#ff8f00" radius="0.8" radius-tubular="0.145" p="2" q="3" position="0 1 -7" handle-events="" material="" geometry=""
                       animation="easing: linear; property: rotation; dur: 30000; to: 0 360 1080; repeat: indefinite; loop: true"
+                      navigate-on-click="url: https://soundcloud.com/fumiyakawase?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing">
+        </a-torus-knot>
+        <!-- Right 1 -->
+        <a-torus-knot src="Assets/MOSHED-2023-12-10-18-13-55.jpg" color="#8bff00" radius="0.8" radius-tubular="0.145" p="2" q="3" position="4 1 -7" handle-events="" material="" geometry=""
+                      animation="easing: linear; property: rotation; dur: 30000; to: -1080 0 360; repeat: indefinite; loop: true" 
                       navigate-on-click="url: https://bandcamp.com/kawase">
         </a-torus-knot>
-
-        <a-torus-knot src="Assets/MOSHED-2023-12-10-18-13-55.jpg" color="#8bff00" radius="0.8" radius-tubular="0.145" p="2" q="3" position="4 1 -7" handle-events="" material="" geometry=""
-        animation="easing: linear; property: rotation; dur: 30000; to: -1080 0 360; repeat: indefinite; loop: true" navigate-on-click="url: https://soundcloud.com/fumiyakawase?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"></a-torus-knot>
-        
-
+        <!-- Left 1 -->
         <a-torus-knot src="Assets/MOSHED-2023-12-10-18-13-55.jpg" color="#00ffd8" radius="0.8" radius-tubular="0.145" p="2" q="3" position="-4 1 -7" handle-events="" material="" geometry=""
-        animation="easing: linear; property: rotation; dur: 30000; to: 360 -1080 0; repeat: indefinite; loop: true" navigate-on-click="url: https://www.instagram.com/fumiya_kawase/"></a-torus-knot>
-
+                      animation="easing: linear; property: rotation; dur: 30000; to: 360 -1080 0; repeat: indefinite; loop: true" 
+                      navigate-on-click="url: https://www.instagram.com/fumiya_kawase/">
+        </a-torus-knot>
+         <!-- Left 2 -->
         <a-torus-knot src="Assets/MOSHED-2023-12-10-18-13-55.jpg" color="#ff00d8" radius="0.8" radius-tubular="0.145" p="2" q="3" position="-8 1 -7" handle-events="" material="" geometry=""
-        animation="easing: linear; property: rotation; dur: 30000; to: 360 0 -1080; repeat: indefinite; loop: true"navigate-on-click="url: https://www.mixcloud.com/fumiyakawase/"></a-torus-knot>
-
+                      animation="easing: linear; property: rotation; dur: 30000; to: 360 0 -1080; repeat: indefinite; loop: true"
+                      navigate-on-click="url: https://www.mixcloud.com/fumiyakawase/">
+        </a-torus-knot>
+        <!-- Right 2 -->
         <a-torus-knot src="Assets/MOSHED-2023-12-10-18-13-55.jpg" color="#f7ff00" radius="0.8" radius-tubular="0.145" p="2" q="3" position="8 1 -7" handle-events="" material="" geometry=""
-        animation="easing: linear; property: rotation; dur: 30000; to: 360 0 1080; repeat: indefinite; loop: true" navigate-on-click="url: https://youtube.com/@alcedo7256?si=kYPFNeiatGECPEKy"></a-torus-knot>
+                      animation="easing: linear; property: rotation; dur: 30000; to: 360 0 1080; repeat: indefinite; loop: true"
+                      navigate-on-click="url: https://youtube.com/@alcedo7256?si=kYPFNeiatGECPEKy">
+        </a-torus-knot>
+      </a-entity>
+      <!-- Link Title -->
+      <!-- Center -->
+      <a-entity animation="easing: linear; property: rotation; dur: 5000; to: 3 -2 3; repeat: indefinite; loop: true; dir: alternate">
+        <a-text position="0 2.3 -6.5" text="value: SoundCloud; align: center; font: monoid" scale="1.5 1.5 1.5" side="double"
+                animation="easing: linear; property: color; dur: 800; from: #00fff7; to: #e1ff00; repeat: indefinite; loop: true; dir: alternate"></a-text>
+      </a-entity>
+      <!-- Right 1 -->
+      <a-entity animation="easing: linear; property: rotation; dur: 4000; to: 3 2 -3; repeat: indefinite; loop: true; dir: alternate">
+        <a-text position="4 2.3 -6.5" text="value: Bandcamp; align: center; font: monoid" scale="1.5 1.5 1.5" side="double"
+                animation="easing: linear; property: color; dur: 800; from: #fc9eff; to: #ff9ec0; repeat: indefinite; loop: true; dir: alternate"></a-text>
+      </a-entity>
+      <!-- Left 1 -->
+      <a-entity animation="easing: linear; property: rotation; dur: 5500; to: 3 -4 3; repeat: indefinite; loop: true; dir: alternate">
+        <a-text position="-4 2.3 -6.5" text="value: Instagram; align: center; font: monoid" scale="1.5 1.5 1.5" side="double"
+                animation="easing: linear; property: color; dur: 2000; from: #ffff9e; to: #ff9d72; repeat: indefinite; loop: true; dir: alternate"></a-text>
+      </a-entity>
+      <!-- Left 2 -->
+      <a-entity animation="easing: linear; property: rotation; dur: 5500; to: 2 -4 -2; repeat: indefinite; loop: true; dir: alternate">
+        <a-text position="-8 2.3 -6.5" text="value: Mixcloud; align: center; font: monoid" scale="1.5 1.5 1.5" side="double"
+                animation="easing: linear; property: color; dur: 1000; from: #4ffa3b; to: #f8fc1f; repeat: indefinite; loop: true; dir: alternate"></a-text>
+      </a-entity>
+      <!-- Right 2 -->
+      <a-entity animation="easing: linear; property: rotation; dur: 6000; to: 3 6 -3; repeat: indefinite; loop: true; dir: alternate">
+        <a-text position="8 2.3 -6.5" text="value: YouTube; align: center; font: monoid" scale="1.5 1.5 1.5" side="double"
+                animation="easing: linear; property: color; dur: 2000; from: #72ff7f; to: #72f0ff; repeat: indefinite; loop: true; dir: alternate"></a-text>
       </a-entity>
 
-      //a-entity id="lightSphere" geometry="primitive: sphere; radius: 0.2" material="shader: flat" light="type: point; color: #FFF" position="-4 3 0"
-                animation="property: position; to: 4 2.8 -4; dir: alternate; loop: true"></a-entity>
+      <!-- Name -->
+      <a-entity>
+        <a-text position="-8 5.5 -7" text="value: FUMIYA KAWASE; align: center; font: monoid" scale="2 2 2" side="double" color="#00fbff"
+        animation="easing: linear; property: rotation; dur: 8000; to: 360 720 -360; repeat: indefinite; loop: true"
+        animation__2="easing: linear; property: color; dur: 2000; from: #ff9300; to: #e5b4ff; repeat: indefinite; loop: true; dir: alternate">
+        </a-text>
+      </a-entity>
 
-      <a-box src="#block" position="0  4 -7" side="double"
+      <!-- Plane -->
+      <a-plane height="30" width="30" rotation="0 0 0" position=" 0 -2 -100" displacement-biasy="-100"
+               animation="easing: linear; property: rotation; dur: 2000; to: 00 0 360; repeat: indefinite; loop: true">
+      </a-plane>
+      <a-plane height="30" width="30" rotation="0 0 0" position=" 55 -2 -100" displacement-biasy="-100"
+               animation="easing: linear; property: rotation; dur: 2000; to: 00 0 360; repeat: indefinite; loop: true">
+      </a-plane>
+      <a-plane height="30" width="30" rotation="0 0 0" position=" 110 -2 -100" displacement-biasy="-100"
+               animation="easing: linear; property: rotation; dur: 2000; to: 00 0 360; repeat: indefinite; loop: true">
+      </a-plane>
+      <a-plane height="30" width="30" rotation="0 0 0" position=" -55 -2 -100" displacement-biasy="-100"
+      animation="easing: linear; property: rotation; dur: 2000; to: 00 0 360; repeat: indefinite; loop: true">
+      </a-plane>
+      <a-plane height="30" width="30" rotation="0 0 0" position=" -110 -2 -100" displacement-biasy="-100"
+               animation="easing: linear; property: rotation; dur: 2000; to: 00 0 360; repeat: indefinite; loop: true">
+      </a-plane>
+
+
+      <a-box src="#block" position="0  6 -8" side="double"
              animation="easing: linear; property: rotation; dur: 10000; to :0 0 360: repeat: indefinite; loop: true">
       </a-box>
-      <a-box src="#block" position="0  4 -7" side="double"
+      <a-box src="#block" position="0  6 -8" side="double"
              animation="easing: linear; property: rotation; dur: 10000; to :360 0 0: repeat: indefinite; loop: true">
       </a-box>
-      <a-box src="#block" position="0  4 -7" side="double"
+      <a-box src="#block" position="0  6 -8" side="double"
              animation="easing: linear; property: rotation; dur: 10000; to :0 360 0: repeat: indefinite; loop: true">
       </a-box>
+
       <a-entity position="0 4 -7" animation="property: rotation; to: 0 360 0; repeat: indefinite; dur: 5000; easing: linear; loop: true">
           <a-box src="#block" position="3 0 0" animation="property: rotation; to: 360 360 360; repeat: indefinite; dur:5000; easing: linear; loop: true">
           </a-box>
@@ -542,7 +604,9 @@
     
       
       <a-camera><a-cursor></a-cursor></a-camera>
-      <a-sky src="Assets/MOSHED-2023-12-10-18-26-3.jpg" material=""></a-sky>
+      <a-sky src="Assets/MOSHED-2023-12-10-18-26-3.jpg" material="" animation="easing: linear; property: rotation; dur: 300000; to: 0 360 0; repeat: indefinite; loop: true"></a-sky>
+      //a-entity id="lightSphere" geometry="primitive: sphere; radius: 0.2" material="shader: flat" light="type: point; color: #FFF" position="-4 3 0"
+                animation="property: position; to: 4 2.8 -4; dir: alternate; loop: true">/a-entity>
 
     </a-scene>
   </body>
